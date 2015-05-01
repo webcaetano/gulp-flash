@@ -26,7 +26,7 @@ describe('gulp-flash', function() {
 	});
 
 	it('should build all .as files', function(done) {
-		this.timeout(8000);
+		this.timeout(9000);
 
 		var filesArr = glob.sync(files);
 		var pipeNum = 0;
@@ -47,7 +47,7 @@ describe('gulp-flash', function() {
 	});
 
 	it('should build all .as files and output on target folder', function(done) {
-		this.timeout(8000);
+		this.timeout(9000);
 		var filesArr = glob.sync(files);
 		var pipeNum = 0;
 		var outputFoder = __dirname+'/swf';
@@ -69,7 +69,7 @@ describe('gulp-flash', function() {
 	});
 
 	it('should build all .as files and output on target folder with parameters', function(done) {
-		this.timeout(8000);
+		this.timeout(9000);
 		var filesArr = glob.sync(files);
 		var pipeNum = 0;
 		var outputFoder = __dirname+'/swf';

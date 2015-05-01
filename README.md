@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/webcaetano/gulp-flash.svg?branch=master)](https://travis-ci.org/webcaetano/gulp-flash) 
+[![Build Status](https://travis-ci.org/webcaetano/gulp-flash.svg?branch=master)](https://travis-ci.org/webcaetano/gulp-flash) [![npm version](https://badge.fury.io/js/gulp-flash.svg)](http://badge.fury.io/js/gulp-flash)
 
 # Gulp Flash
 
