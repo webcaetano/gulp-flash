@@ -4,7 +4,6 @@ var through = require('through2');
 var swfBuild = require('swf-build');
 var path = require('path');
 var fs = require('fs');
-var isdir = require('isdir');
 
 module.exports = function (output,params) {
 	function flashBuild(file, enc, callback) {
