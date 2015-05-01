@@ -16,7 +16,9 @@ module.exports = function (output,params) {
 		var args = [file.path]; // input
 
 		if(typeof output==='string') { // if string are output path
-			args.push((fs.lstatSync(output).isDirectory() ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
+			console.log(output);
+			console.log(path.resolve(output));
+			args.push((fs.lstatSync(path.resolve(output)).isDirectory() ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
 		}
 
 		if(typeof output==='object') { //params
