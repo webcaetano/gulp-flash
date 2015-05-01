@@ -15,7 +15,7 @@ module.exports = function (output,params) {
 		var args = [file.path]; // input
 
 		if(typeof output==='string') { // if string are output path
-			args.push((path.extname(path.resolve(output))!='.as' ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
+			args.push((!path.extname(path.resolve(output)) ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
 		}
 
 		if(typeof output==='object') { //params
