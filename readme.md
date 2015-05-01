@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/webcaetano/gulp-flash.svg?branch=master)](https://travis-ci.org/webcaetano/gulp-flash) 
+
 # Gulp Flash
 
 ### Installation
