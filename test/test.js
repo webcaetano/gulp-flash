@@ -8,7 +8,6 @@ var fs = require('fs');
 var path = require('path');
 var glob = require('glob');
 
-
 describe('gulp-flash', function() {
 
 	var filename = __dirname + '/main.as';

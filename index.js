@@ -4,6 +4,7 @@ var through = require('through2');
 var swfBuild = require('swf-build');
 var path = require('path');
 var fs = require('fs');
+var isdir = require('isdir');
 
 module.exports = function (output,params) {
 	var done;
@@ -16,7 +17,7 @@ module.exports = function (output,params) {
 		var args = [file.path]; // input
 
 		if(typeof output==='string') { // if string are output path
-			args.push((fs.lstatSync(path.resolve(output)).isDirectory() ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
+			args.push((isdir(path.resolve(output)) ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
 		}
 
 		if(typeof output==='object') { //params
