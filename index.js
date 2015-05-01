@@ -15,8 +15,7 @@ module.exports = function (output,params) {
 		var args = [file.path]; // input
 
 		if(typeof output==='string') { // if string are output path
-			if (!fs.existsSync(path.dirname(path.resolve(output)))) fs.mkdirSync(path.dirname(path.resolve(output)));
-			args.push((fs.lstatSync(path.resolve(output)).isDirectory() ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
+			args.push((path.extname(path.resolve(output))!='.as' ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
 		}
 
 		if(typeof output==='object') { //params
