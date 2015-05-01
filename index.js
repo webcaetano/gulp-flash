@@ -18,8 +18,10 @@ module.exports = function (output,params) {
 		var args = [file.path]; // input
 
 		if(typeof output==='string') { // if string are output path
+			console.log('isdir:'+(isdir.sync(output) ? 'true' : 'false'))
 			args.push((isdir.sync(output) ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
 		}
+
 
 		if(typeof output==='object') {
 			args.push(output);
