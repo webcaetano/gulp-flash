@@ -50,7 +50,7 @@ describe('gulp-flash', function() {
 		this.timeout(8000);
 		var filesArr = glob.sync(files);
 		var pipeNum = 0;
-		var outputFoder = __dirname+'/swf';
+		var outputFoder = __dirname+'/swf/';
 
 		gulp.src(files)
 		.pipe(flash(outputFoder))
@@ -72,7 +72,7 @@ describe('gulp-flash', function() {
 		this.timeout(8000);
 		var filesArr = glob.sync(files);
 		var pipeNum = 0;
-		var outputFoder = __dirname+'/swf';
+		var outputFoder = __dirname+'/swf/';
 
 		gulp.src(files)
 		.pipe(flash(outputFoder,{
