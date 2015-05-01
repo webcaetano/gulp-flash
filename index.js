@@ -7,7 +7,6 @@ var fs = require('fs');
 var isdir = require('isdir');
 
 module.exports = function (output,params) {
-	var done;
 	function flashBuild(file, enc, callback) {
 		if (file.isNull() || path.extname(file.path)!='.as') return callback(null, file);
 		if (file.isStream()) return callback(new gutil.PluginError('gulp-flash', 'Streaming not supported'));
@@ -17,7 +16,8 @@ module.exports = function (output,params) {
 		var args = [file.path]; // input
 
 		if(typeof output==='string') { // if string are output path
-			args.push((isdir(path.resolve(output)) ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
+			if (!fs.existsSync(path.dirname(path.resolve(output)))) fs.mkdirSync(path.resolve(output));
+			args.push((fs.lstatSync(path.resolve(output)).isDirectory() ? path.resolve(output,path.basename(file.path,'.as')+'.swf') : path.resolve(output)));
 		}
 
 		if(typeof output==='object') { //params
