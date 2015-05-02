@@ -25,7 +25,8 @@ module.exports = function (output,params) {
 		}
 
 		args.push(function(err, stdout, stderr){ // callback
-			callback(err, file);
+			if(err) console.log(err);
+			callback(null, file);
 		});
 
 		swfBuild.bind.apply(swfBuild, [null].concat(args))();
