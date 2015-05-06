@@ -1,44 +1,44 @@
 {
-	"name": "gulp-flash",
-	"version": "1.0.7",
-	"description": "GulpJS plugin for build actionscript into .swf ",
-	"license": "MIT",
-	"repository": "webcaetano/gulp-flash",
-	"author": {
-		"name": "",
-		"email": "dezaodoido@gmail.com",
-		"url": "https://github.com/webcaetano"
-	},
-	"engines": {
-		"node": ">=0.10.0"
-	},
-	"scripts": {
-		"test": "mocha test"
-	},
-	"files": [
-		"index.js"
-	],
-	"keywords": [
-		"gulpplugin",
-		"swf",
-		"flash",
-		"actionscript",
-		"as3",
-		"as2",
-		"builder",
-		"build",
-		"as"
-	],
-	"dependencies": {
-		"beepbeep": "^1.2.0",
-		"gulp-util": "^3.0.1",
-		"swf-build": "^1.0.3",
-		"through2": "^0.6.3"
-	},
-	"devDependencies": {
-		"chai": "^2.3.0",
-		"glob": "^5.0.5",
-		"gulp": "^3.8.11",
-		"mocha": "*"
-	}
+  "name": "gulp-flash",
+  "version": "1.0.8",
+  "description": "GulpJS plugin for build actionscript into .swf ",
+  "license": "MIT",
+  "repository": "webcaetano/gulp-flash",
+  "author": {
+    "name": "",
+    "email": "dezaodoido@gmail.com",
+    "url": "https://github.com/webcaetano"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "swf",
+    "flash",
+    "actionscript",
+    "as3",
+    "as2",
+    "builder",
+    "build",
+    "as"
+  ],
+  "dependencies": {
+    "beepbeep": "^1.2.0",
+    "gulp-util": "^3.0.1",
+    "swf-build": "^1.0.4",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "glob": "^5.0.5",
+    "gulp": "^3.8.11",
+    "mocha": "*"
+  }
 }

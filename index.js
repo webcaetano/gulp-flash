@@ -25,7 +25,7 @@ module.exports = function (output,params) {
 			if(params) args.push(params);
 		}
 
-		if(file.swc){
+		if(file.swc && Array.isArray(file.swc) && file.swc.length){
 			for(var i in file.swc) path.relative(file.swc[i],file.path);
 			if(!params['library-path']){
 				params['library-path']=file.swc;
