@@ -65,7 +65,9 @@ gulp.src('src/*.as')
 }))) // will out pull all .swf in same folder using this parameters
 ```
 
+[![npm](https://nodei.co/npm/gulp-flash.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-flash)
+
 
 ---------------------------------
 
-The MIT [License](https://raw.githubusercontent.com/webcaetano/gulp-flash/master/LICENSE.md)
+[The MIT License](https://raw.githubusercontent.com/webcaetano/gulp-flash/master/LICENSE.md)
